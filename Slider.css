@@ -5,38 +5,7 @@
 }
 
 /* SVG positionings  */
-#arrow{
-    position: relative;
-    top: 261px;
-    right: 560px;
-    width: 250px;
-    height: 250px;
-    z-index : 0;
-}
-#arrow_d{
-    position: relative;
-    top: 305px;
-    right: 810px;
-    width: 250px;
-    height: 250px;
-    z-index : 0;
-}
-#arrow1{
-    position: relative;
-    top: -530px;
-    right: -895px;
-    width: 250px;
-    height: 250px;
-    z-index : 1;
-}
-#arrow_d1{
-    position: relative;
-    top: -495px;
-    right: -645px;
-    width: 250px;
-    height: 250px;
-    z-index : 1;
-}
+
 #stoma{
     position: relative; 
     top: 0px;  
