@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0"/>
     <title>Language simulation</title> 
     <script src="https://d3js.org/d3.v6.min.js"></script>
-    <link rel = "stylesheet" href="Slider.css">
+    <link rel = "stylesheet" href="Slider.css" >
+    
 </head>
 <body id="boo" >
 <!--Setting SVGs-->
-</br>
     <svg  id="stoma" width="400" height="370"><text  x="130" y="15" fill="black" font-size="1.4em" font-weight="bold">Sentence simulation</text></svg>
     <svg  id="stoma-2" width="400" height="370"><text  x="140" y="15" fill="black"font-size="1.4em"font-weight="bold" >Gist Simulation</text></svg>
-    <img id="arrow" src="Images_1\arrows.svg">  
 <!--Text-->  
 <h3>
 <b>     
-        <div id = "sent-1">  In Class IX, we had talked about tiny pores present on the surface of the leaves called stomata.</div>
-   </br><div id = "sent-2">Through these pores in the leaves, massive amounts of gases are exchanged, starting the process of photosynthesis.</div>
-   </br><div id = "sent-3"> These gases are exchanged across the surface of stems, roots and leaves as well.</div>
-   </br><div id = "sent-4">Since the plant can also lose large amounts of water through these stomata, it closes these pores when it does not need carbon dioxide for photosynthesis.</div> 
-   </br><div id = "sent-5">The pores open and close because of the guard cells.When water flows into the guard cells, they swell and the stomatal pore opens.</div>
-   </br><div id = "sent-6">Similarly (when water flows out of them) the guard cells shrink and the pore closes.</div>
+<div class="one">  
+    <div id = "sent-1">In Class IX, we had talked about tiny pores present on the surface of the leaves called stomata.</div>
+    <input id="slider-1" type="range" value="0" step = "2" min="0" max ="46">  
+</div>
+<div class="two"> 
+    <div id = "sent-2">Through these pores in the leaves, massive amounts of gases are exchanged, starting the process of photosynthesis.</div>
+    <input id="slider-2" type="range" value="3" step = "1" min="3" max ="30">
+</div>   
+ <div class="three">
+    <div id = "sent-3"> These gases are exchanged across the surface of stems, roots and leaves as well.</div>
+    <input id="slider-3" type="range" value="0" step = "1" min="0" max ="100"></div>
+</div>
+<div class="four-five"> 
+   <div id = "sent-4">Since the plant can also lose large amounts of water through these stomata, it closes these pores when it does not need carbon dioxide for photosynthesis.</div>
+   <input id="slider-4" type="range" value="0" step = "1" min="0" max ="100">
+   <input id="slider-5" type="range" value="0" step = "1" min="0" max ="20">
+   <img id="arrow" src="Images_1\arrows.svg">
+   <img id="arrow1" src="Images_1\arrows1.svg">
+</div> 
+<div class="six-seven">   
+   <div id = "sent-5">The pores open and close because of the guard cells.When water flows into the guard cells, they swell and the stomatal pore opens.</div> 
+   <input id="slider-6" type="range" value="0" step = "1" min="0" max ="100">
+   <input id="slider-7" type="range" value="0" step = "5" min="0" max ="100">
+</div>
+<div class="eight"> 
+   <div id = "sent-6">Similarly (when water flows out of them) the guard cells shrink and the pore closes.</div>
+   <input id="slider-8" type="range" value="0" step = "5" min="0" max ="100">
+</div>
 </b>    
 </h3>
-<!--Custom Sliders-->
-    <input id="slider-1" type="range" value="0" step = "2" min="0" max ="46">
-    <input id="slider-2" type="range" value="3" step = "1" min="3" max ="30"></div></br>
-    <input id="slider-3" type="range" value="0" step = "1" min="0" max ="100"></div></br>
-    <input id="slider-4" type="range" value="0" step = "1" min="0" max ="100"></div></br>
-    <input id="slider-5" type="range" value="0" step = "1" min="0" max ="100"></div></br>
-    <input id="slider-6" type="range" value="0" step = "1" min="0" max ="100"></div></br>
-    <input id="slider-7" type="range" value="0" step = "5" min="0" max ="100"></div></br>
-    <input id="slider-8" type="range" value="0" step = "1" min="0" max ="20"></div></br>
 
 <script src="Stoma_slider.js"></script>
 
-<img id="arrow1" src="Images_1\arrows1.svg">
 </body>
 </html>

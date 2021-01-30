@@ -5,6 +5,7 @@
 //})
 
 // Appending image to SVG //
+
 var u = d3.select("#stoma-2")
 .append("image")
 .attr("width",450)
@@ -30,6 +31,8 @@ var t = d3.select("#stoma")
 }))
 */
 //Slider 1 animation//
+
+console.log()
 d3.select("#slider-1").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
 var w = 1200-(16*i+5)
@@ -95,8 +98,8 @@ else if(i>89 & i % 3 == 1){t.attr("xlink:href","P3_pore2.jpg").attr("width",759)
 else if(i>90 & i % 3 == 2){t.attr("xlink:href","P3_pore3.jpg").attr("width",759).attr("height",659)}
 */
 })
-//Slider 8 animation [Pore closing]
-d3.select("#slider-8").on("input", function(){
+//Slider 5 animation [Pore closing]
+d3.select("#slider-5").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
 if(i<5){t.attr("xlink:href","Images_1\\P3_pore1.jpg").attr("width",759).attr("height",659).attr("visibility","").attr("x",0).attr("y",-20)}
 if(i>5){t.attr("xlink:href","Images_1\\P3_pore2.jpg").attr("width",759).attr("height",659).attr("x",0).attr("y",-20)}
@@ -104,9 +107,9 @@ if(i>15){t.attr("xlink:href","Images_1\\P3_pore3.jpg").attr("width",759).attr("h
 u.attr("visibility","")
 })
 
-//Slider 5 animation [Guard cells]
+//Slider 6 animation [Guard cells]
 
-d3.select("#slider-5").on("input", function(){
+d3.select("#slider-6").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
   var w = i*2+ 759;
   var h = i*2 + 659;
@@ -119,24 +122,24 @@ u.attr("xlink:href","Images_1\\Gist_Stomata.jpg").attr("y",30).attr("visibility"
 })
 
 
-//Slider 6 animation [Guard cells - water in]
-d3.select("#slider-6").on("input", function(){
+//Slider 7 animation [Guard cells - water in]
+d3.select("#slider-7").on("input", function(){
   let i = d3.select(this).property('value');
-  if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_closed_arrows1.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50).attr("visibility","")}
-  else if(i % 4 == 1){t.attr("xlink:href","Images_1\\stoma_closed_arrows2.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  else if(i %4  == 2){t.attr("xlink:href","Images_1\\stoma_closed_arrows3.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  else if(i %4  == 3){t.attr("xlink:href","Images_1\\stoma_closed_arrows4.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  if(i>70){t.attr("xlink:href","Images_1\\stoma_open.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
+  if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_closed_arrows1.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50).attr("visibility","")}
+  else if(i % 4 == 1){t.attr("xlink:href","Images_1\\stoma_closed_arrows2.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  else if(i %4  == 2){t.attr("xlink:href","Images_1\\stoma_closed_arrows3.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  else if(i %4  == 3){t.attr("xlink:href","Images_1\\stoma_closed_arrows4.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  if(i>70){t.attr("xlink:href","Images_1\\stoma_open.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
   u.attr("xlink:href","Images_1\\Gist_Stomata.jpg").attr("y",30).attr("visibility","")
 })
 
-//Slider 7 animation [Guard cells - water out]
-d3.select("#slider-7").on("input", function(){
-  let i = d3.select(this).property('value');
-  if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_open_arr1.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50).attr("visibility","")}
-  else if(i % 4 == 1){t.attr("xlink:href","Images_1\\stoma_open_arr2.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  else if(i % 4  == 2){t.attr("xlink:href","Images_1\\stoma_open_arr3.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  else if(i % 4  == 3){t.attr("xlink:href","Images_1\\stoma_open_arr4.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
-  if(i>70){t.attr("xlink:href","Images_1\\stoma_closed.jpg").attr("width",330).attr("height",300).attr("x",0).attr("y",50)}
+//Slider 8 animation [Guard cells - water out]
+d3.select("#slider-8").on("input", function(){
+  let i = parseInt(d3.select(this).property('value'));
+  if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_open_arr1.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50).attr("visibility","")}
+  else if(i % 4 == 1){t.attr("xlink:href","Images_1\\stoma_open_arr2.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  else if(i % 4  == 2){t.attr("xlink:href","Images_1\\stoma_open_arr3.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  else if(i % 4  == 3){t.attr("xlink:href","Images_1\\stoma_open_arr4.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
+  if(i>70){t.attr("xlink:href","Images_1\\stoma_closed.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50)}
   u.attr("xlink:href","Images_1\\Gist_Stomata.jpg").attr("y",30).attr("visibility","")
 })
