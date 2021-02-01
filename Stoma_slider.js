@@ -1,10 +1,5 @@
 
-//let zoom = d3.zoom().on("zoom",function(){
- // t.attr("width", 400)
-//  .attr("height",400)
-//})
 
-// Appending image to SVG //
 
 var u = d3.select("#stoma-2")
 .append("image")
@@ -23,16 +18,24 @@ var t = d3.select("#stoma")
 .attr("xlink:href","Images_1\\leaf.jpg")
 .attr("visibility","hidden")
 
-/*.call(d3.zoom().on("zoom", function () {
-  t.attr("transform",function(event){
-    console.log(event);
-    return(event.transform);
-  }) 
-}))
-*/
 //Slider 1 animation//
 
-console.log()
+var i1 = d3.select("#ins-1")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-1").on("mousemove",function(event){
+  i1.attr("visibility","")
+  x = event.clientX;
+  i1.attr("x",x-465);
+})
+.on("mouseout",function(){i1.attr("visibility","hidden")})
+
+
+
 d3.select("#slider-1").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
 var w = 1200-(16*i+5)
@@ -43,17 +46,23 @@ t.transition().duration(400).attr("xlink:href","Images_1\\leaf.jpg").attr("width
 u.attr("visibility","")
 })
 
-//Slider 1 zooming manual code
-/*
-if(i == 0){ t.transition().duration(400).attr("width",w).attr("height",h) }
-   else if(i == 5){t.transition().duration(400).attr("width",750).attr("height",750) }
-   else if(i == 10){t.transition().duration(400).attr("width",650).attr("height",650) }
-    else if(i == 15){t.transition().duration(400).attr("width",550).attr("height",550) }
-    
-})
-*/
-
 //Slider 2 animation
+
+var i2 = d3.select("#ins-2")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-2").on("mousemove",function(event){
+  i2.attr("visibility","")
+  x = event.clientX;
+  i2.attr("x",x-465);
+})
+.on("mouseout",function(){i2.attr("visibility","hidden")})
+
+
 d3.select("#slider-2").on("input", function(){
   let i = d3.select(this).property('value');
 if(i % 3 == 0 ){t.attr("xlink:href","Images_1\\leaf_label_a1.jpg").attr("visibility","").attr("width",459).attr("height",459).attr("x",-88).attr("y",-42)}
@@ -63,6 +72,22 @@ u.attr("visibility","")
 })
 
 //Slider 3 animation - mix of 1 and 2
+
+var i3 = d3.select("#ins-3")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-3").on("mousemove",function(event){
+  i3.attr("visibility","")
+  x = event.clientX;
+  i3.attr("x",x-345);
+})
+.on("mouseout",function(){i3.attr("visibility","hidden")})
+
 d3.select("#slider-3").on("input", function(){
   let i = d3.select(this).property('value');
   var w = 1000-(i+2)
@@ -75,30 +100,50 @@ u.attr("xlink:href","Images_1\\Gist_Plant.jpg").attr("width",408).attr("height",
 })
 
 //Slider 4 animation 
+var i4 = d3.select("#ins-4")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-4").on("mousemove",function(event){
+  i4.attr("visibility","")
+  x = event.clientX;
+  i4.attr("x",x-370);
+})
+.on("mouseout",function(){i4.attr("visibility","hidden")})
 
 d3.select("#slider-4").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
-  console.log(i)
   var w = i*9 + 408;
-  console.log(w)
   var h = i*9 + 308;
 if(i <40 ){t.attr("xlink:href","Images_1\\P3.jpg").attr("width",w).attr("height",h).attr("visibility","").attr("x",0).attr("y",0.5)}
-/*
-if(i>=40 & i % 3 == 0){t.attr("xlink:href","P3_water1.jpg").attr("width",759).attr("height",659)}
-else if(i>40 & i % 3 == 1){t.attr("xlink:href","P3_water2.jpg").attr("width",759).attr("height",659)}
-else if(i>40 & i % 3 == 2){t.attr("xlink:href","P3_water3.jpg").attr("width",759).attr("height",659)}
-*/
+
 if(i>40 & i % 3 == 0){t.attr("xlink:href","Images_1\\P3_H2O1.jpg").attr("width",759).attr("height",659).attr("x",0).attr("y",0.5)}
 else if(i>40 & i % 3 == 1){t.attr("xlink:href","Images_1\\P3_H202.jpg").attr("width",759).attr("height",659).attr("x",0).attr("y",0.5)}
 else if(i>80 & i % 3 == 2){t.attr("xlink:href","Images_1\\P3_H2O3.jpg").attr("width",759).attr("height",659).attr("x",0).attr("y",0.5)}
 u.attr("xlink:href","Images_1\\Gist_Leaf.jpg").attr("visibility","")
-/*
-if(i>89 & i % 3 == 0){t.attr("xlink:href","P3_pore1.jpg").attr("width",759).attr("height",659)}
-else if(i>89 & i % 3 == 1){t.attr("xlink:href","P3_pore2.jpg").attr("width",759).attr("height",659)}
-else if(i>90 & i % 3 == 2){t.attr("xlink:href","P3_pore3.jpg").attr("width",759).attr("height",659)}
-*/
+
 })
 //Slider 5 animation [Pore closing]
+
+var i5 = d3.select("#ins-5")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-5").on("mousemove",function(event){
+  i5.attr("visibility","")
+  x = event.clientX;
+  i5.attr("x",x-845);
+})
+.on("mouseout",function(){i5.attr("visibility","hidden")})
+
 d3.select("#slider-5").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
 if(i<5){t.attr("xlink:href","Images_1\\P3_pore1.jpg").attr("width",759).attr("height",659).attr("visibility","").attr("x",0).attr("y",-20)}
@@ -108,6 +153,21 @@ u.attr("visibility","")
 })
 
 //Slider 6 animation [Guard cells]
+
+var i6 = d3.select("#ins-6")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-6").on("mousemove",function(event){
+  i6.attr("visibility","")
+  x = event.clientX;
+  i6.attr("x",x-300);
+})
+.on("mouseout",function(){i6.attr("visibility","hidden")})
 
 d3.select("#slider-6").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
@@ -123,6 +183,23 @@ u.attr("xlink:href","Images_1\\Gist_Stomata.jpg").attr("y",30).attr("visibility"
 
 
 //Slider 7 animation [Guard cells - water in]
+var i7 = d3.select("#ins-7")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-7").on("mousemove",function(event){
+  i7.attr("visibility","")
+  x = event.clientX;
+  i7.attr("x",x-695);
+})
+.on("mouseout",function(){i7.attr("visibility","hidden")})
+
+
+
 d3.select("#slider-7").on("input", function(){
   let i = d3.select(this).property('value');
   if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_closed_arrows1.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50).attr("visibility","")}
@@ -134,6 +211,21 @@ d3.select("#slider-7").on("input", function(){
 })
 
 //Slider 8 animation [Guard cells - water out]
+var i8 = d3.select("#ins-8")
+.append("image")
+.attr("xlink:href","Images_1\\Instruction.svg")
+.attr("width",30)
+.attr("x",0)
+.attr("y",0)
+.attr("visibility","hidden");
+
+d3.select("#slider-8").on("mousemove",function(event){
+  i8.attr("visibility","")
+  x = event.clientX;
+  i8.attr("x",x-280);
+})
+.on("mouseout",function(){i8.attr("visibility","hidden")})
+
 d3.select("#slider-8").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
   if(i % 4 == 0 ){t.attr("xlink:href","Images_1\\stoma_open_arr1.jpg").attr("width",330).attr("height",300).attr("x",50).attr("y",50).attr("visibility","")}
