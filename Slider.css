@@ -1,15 +1,14 @@
 
-/*#boo{
-    overflow-y: hidden;
+#boo{
+   /* overflow-y: hidden;*/
     overflow-x: hidden;
-}*/
+}
 #expl{
     position: relative;
-    top:-106px;
-    right: 100px;
-    height: 120px;
-    width: 374px;
-    z-index: -16;   
+    top:-150px;
+    right: 80px;
+    height: 150px;
+    width: 360px;  
 }
 
 /* SVG positionings  */
@@ -50,7 +49,7 @@
 /* First line  */
 #ins-1 {
     position: relative;
-    top:-158px;
+    top:-190px;
     right: -50px;
     height: 40px;
     width: 640px;
