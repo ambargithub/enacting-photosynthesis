@@ -30,7 +30,7 @@ var i1 = d3.select("#ins-1")
 d3.select("#slider-1").on("mousemove",function(event){
   i1.attr("visibility","")
   x = event.clientX;
-  i1.attr("x",x-413);
+  i1.attr("x",x-433);
 })
 .on("mouseout",function(){i1.attr("visibility","hidden")})
 
@@ -58,7 +58,7 @@ var i2 = d3.select("#ins-2")
 d3.select("#slider-2").on("mousemove",function(event){
   i2.attr("visibility","")
   x = event.clientX;
-  i2.attr("x",x-443);
+  i2.attr("x",x-464);
 })
 .on("mouseout",function(){i2.attr("visibility","hidden")})
 
@@ -84,7 +84,7 @@ var i3 = d3.select("#ins-3")
 d3.select("#slider-3").on("mousemove",function(event){
   i3.attr("visibility","")
   x = event.clientX;
-  i3.attr("x",x-280);
+  i3.attr("x",x-302);
 })
 .on("mouseout",function(){i3.attr("visibility","hidden")})
 
@@ -111,7 +111,7 @@ var i4 = d3.select("#ins-4")
 d3.select("#slider-4").on("mousemove",function(event){
   i4.attr("visibility","")
   x = event.clientX;
-  i4.attr("x",x-325);
+  i4.attr("x",x-345);
 })
 .on("mouseout",function(){i4.attr("visibility","hidden")})
 
@@ -140,7 +140,7 @@ var i5 = d3.select("#ins-5")
 d3.select("#slider-5").on("mousemove",function(event){
   i5.attr("visibility","")
   x = event.clientX;
-  i5.attr("x",x-800);
+  i5.attr("x",x-820);
 })
 .on("mouseout",function(){i5.attr("visibility","hidden")})
 
@@ -165,7 +165,7 @@ var i6 = d3.select("#ins-6")
 d3.select("#slider-6").on("mousemove",function(event){
   i6.attr("visibility","")
   x = event.clientX;
-  i6.attr("x",x-240);
+  i6.attr("x",x-255);
 })
 .on("mouseout",function(){i6.attr("visibility","hidden")})
 
@@ -194,7 +194,7 @@ var i7 = d3.select("#ins-7")
 d3.select("#slider-7").on("mousemove",function(event){
   i7.attr("visibility","")
   x = event.clientX;
-  i7.attr("x",x-648);
+  i7.attr("x",x-670);
 })
 .on("mouseout",function(){i7.attr("visibility","hidden")})
 
@@ -222,7 +222,7 @@ var i8 = d3.select("#ins-8")
 d3.select("#slider-8").on("mousemove",function(event){
   i8.attr("visibility","")
   x = event.clientX;
-  i8.attr("x",x-230);
+  i8.attr("x",x-250);
 })
 .on("mouseout",function(){i8.attr("visibility","hidden")})
 
