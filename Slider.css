@@ -1,9 +1,16 @@
 
-#boo{
-  /*  overflow-y: hidden;*/
+/*#boo{
+    overflow-y: hidden;
     overflow-x: hidden;
+}*/
+#expl{
+    position: relative;
+    top:-106px;
+    right: 100px;
+    height: 120px;
+    width: 374px;
+    z-index: -16;   
 }
-
 
 /* SVG positionings  */
 #headi{
@@ -43,7 +50,7 @@
 /* First line  */
 #ins-1 {
     position: relative;
-    top:-80px;
+    top:-158px;
     right: -50px;
     height: 40px;
     width: 640px;
@@ -293,6 +300,7 @@
 /* Fifth line  */
 
 /* Sixth line  */
+
 #ins-8 {
     position: relative;
     top:-105px;

@@ -1,4 +1,8 @@
-
+var e = d3.select("#expl")
+.append("image")
+.attr("xlink:href","Images_1\\Expl.svg")
+.attr("x",68)
+.attr("y",-13)
 
 
 var u = d3.select("#stoma-2")
@@ -32,9 +36,10 @@ d3.select("#slider-1").on("mousemove",function(event){
   x = event.clientX;
   i1.attr("x",x-433);
 })
-.on("mouseout",function(){i1.attr("visibility","hidden")})
-
-
+.on("mouseout",function(){
+  i1.attr("visibility","hidden")
+  e.attr("visibility","hidden");
+})
 
 d3.select("#slider-1").on("input", function(){
   let i = parseInt(d3.select(this).property('value'));
