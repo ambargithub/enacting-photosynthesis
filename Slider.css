@@ -156,7 +156,8 @@
 #slider-3{ 
     position: relative;
     top: -10px;
-    width: 480px;
+    right: -5px;
+    width: 490px;
     z-index: 1; }    
 
 /* Third line  */ 
