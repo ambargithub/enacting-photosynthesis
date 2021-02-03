@@ -3,11 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 102 52" style="enable-background:new 0 0 102 52;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.9;}
+	.st0{opacity:0.9;enable-background:new    ;}
 	.st1{fill:#FFFFFF;}
-	.st2{font-family:'MyriadPro-Regular';}
-	.st3{font-size:5.5465px;}
-	.st4{stroke:#000000;stroke-miterlimit:10;}
+	.st2{font-family:'ArialMT';}
+	.st3{font-size:4.7067px;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <g id="XMLID_1_">
 	<g id="XMLID_23_">
@@ -27,11 +27,11 @@
 			c0.5,0,1.2-0.1,1.4-0.6C5.7,28,5.3,27.7,4.9,27.7L4.9,27.7z"/>
 	</g>
 </g>
-<g id="XMLID_8_">
-	<rect id="XMLID_6_" x="20.3" y="21.6" class="st0" width="69" height="9.6"/>
-	<rect id="XMLID_5_" x="20.3" y="10.8" class="st0" width="80.6" height="9.6"/>
-	<rect id="XMLID_7_" x="20.3" y="32.9" class="st0" width="51.8" height="9.6"/>
-	<text id="XMLID_4_" transform="matrix(0.9357 0 0 1 21.7666 17.2022)"><tspan x="0" y="0" class="st1 st2 st3">Explore the animations by dragging</tspan><tspan x="0" y="11.1" class="st1 st2 st3">the pointer on the highlighted</tspan><tspan x="0" y="22.2" class="st1 st2 st3">portion above the text</tspan></text>
-</g>
-<line id="XMLID_9_" class="st4" x1="5.1" y1="26.1" x2="20.3" y2="26.1"/>
+<rect id="XMLID_6_" x="16.3" y="21.9" class="st0" width="53.7" height="8.1"/>
+<rect id="XMLID_5_" x="16.3" y="12.7" class="st0" width="62.7" height="8.1"/>
+<rect id="XMLID_7_" x="16.3" y="31.5" class="st0" width="43.2" height="8.1"/>
+<text transform="matrix(0.883 0 0 1 17.4746 18.1327)" class="st1 st2 st3">Explore the animations by dragging</text>
+<text transform="matrix(0.883 0 0 1 17.4746 27.5512)" class="st1 st2 st3">the pointer on the highlighted</text>
+<text transform="matrix(0.883 0 0 1 17.4746 36.9711)" class="st1 st2 st3">portion above the text</text>
+<line id="XMLID_9_" class="st4" x1="5.1" y1="26.1" x2="16.3" y2="26.1"/>
 </svg>

@@ -6,10 +6,9 @@
 #expl{
     position: relative;
     top:-120px;
-    right: 65px;
+    right: 30px;
     height: 150px;
     width:  360px;  
-    z-index: 25;
 }
 
 /* SVG positionings  */
@@ -50,7 +49,7 @@
 /* First line  */
 #ins-1 {
     position: relative;
-    top:-120px;
+    top:-190px;
     right: -50px;
     height: 40px;
     width: 640px;
