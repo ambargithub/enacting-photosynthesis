@@ -1,8 +1,8 @@
 var e = d3.select("#expl")
 .append("image")
 .attr("xlink:href","Images_1\\Expl.svg")
-.attr("x",47)
-.attr("y",31)
+.attr("x",0)
+.attr("y",0)
 
 
 var u = d3.select("#stoma-2")
