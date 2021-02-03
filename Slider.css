@@ -1,8 +1,8 @@
 
-/*#boo{
-   overflow-y: hidden;
+#boo{
+  /* overflow-y: hidden;*/
     overflow-x: hidden;
-}*/
+}
 #expl{
     position: relative;
     top:-120px;
