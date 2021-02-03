@@ -1,14 +1,14 @@
 
-#boo{
-   /* overflow-y: hidden;*/
+/*#boo{
+   overflow-y: hidden;
     overflow-x: hidden;
-}
+}*/
 #expl{
     position: relative;
     top:-150px;
     right: 80px;
     height: 150px;
-    width: 360px;  
+    width:  60px;  
 }
 
 /* SVG positionings  */
