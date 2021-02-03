@@ -37,8 +37,7 @@ d3.select("#slider-1").on("mousemove",function(event){
   i1.attr("x",x-433);
 })
 .on("mouseout",function(){
-  i1.attr("visibility","hidden")
-  e.attr("visibility","hidden");
+  i1.attr("visibility","hidden");
 })
 
 d3.select("#slider-1").on("input", function(){
