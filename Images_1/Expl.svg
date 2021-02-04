@@ -3,12 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 102 52" style="enable-background:new 0 0 102 52;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.9;enable-background:new    ;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:4.7067px;}
+	.st0{opacity:0.83;fill:#F9F9F9;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st1{fill:#0A0A0A;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:5px;}
 	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
 </style>
+<rect x="13.8" y="11.2" class="st0" width="69.2" height="28.2"/>
 <g id="XMLID_1_">
 	<g id="XMLID_23_">
 		<path id="XMLID_37_" d="M3.4,24.1c0,1.6,0,3.1,0,4.7c0,0.3,2.2,0,2.2-0.6c0-1.6,0-3.1,0-4.7C5.5,23.2,3.4,23.5,3.4,24.1L3.4,24.1z
@@ -27,11 +28,8 @@
 			c0.5,0,1.2-0.1,1.4-0.6C5.7,28,5.3,27.7,4.9,27.7L4.9,27.7z"/>
 	</g>
 </g>
-<rect id="XMLID_6_" x="16.3" y="21.9" class="st0" width="53.7" height="8.1"/>
-<rect id="XMLID_5_" x="16.3" y="12.7" class="st0" width="62.7" height="8.1"/>
-<rect id="XMLID_7_" x="16.3" y="31.5" class="st0" width="43.2" height="8.1"/>
-<text transform="matrix(0.883 0 0 1 17.4746 18.1327)" class="st1 st2 st3">Explore the animations by dragging</text>
-<text transform="matrix(0.883 0 0 1 17.4746 27.5512)" class="st1 st2 st3">the pointer on the highlighted</text>
-<text transform="matrix(0.883 0 0 1 17.4746 36.9711)" class="st1 st2 st3">portion above the text</text>
-<line id="XMLID_9_" class="st4" x1="5.1" y1="26.1" x2="16.3" y2="26.1"/>
+<text transform="matrix(0.883 0 0 1 16.4746 18.1328)" class="st1 st2 st3">Explore the animations by dragging</text>
+<text transform="matrix(0.883 0 0 1 16.4746 27.5508)" class="st1 st2 st3">the pointer on the highlighted</text>
+<text transform="matrix(0.883 0 0 1 16.4746 36.9707)" class="st1 st2 st3">portion above the text</text>
+<line id="XMLID_9_" class="st4" x1="5.1" y1="26.1" x2="13.8" y2="26.1"/>
 </svg>
